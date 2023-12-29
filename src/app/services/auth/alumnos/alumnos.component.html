@@ -1,0 +1,41 @@
+<div>
+    <table class="table table-hover table-dark table-striped">
+        <thead>
+        <tr class="table-dark">
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">DNI</th>
+            <th scope="col">Fec. de Nac.</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Provincia</th>
+            <th scope="col">Localidad</th>
+            <th scope="col">Domicilio</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Seguro</th>
+            <th scope="col">Observaciones</th>
+            <th scope="col">Inscripciones</th>
+            <th scope="col">Cuotas</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of alumnos">
+                <th scope="row"> {{a.id_a}} </th>
+                <td> {{a.nomyApe}} </td>
+                <td> {{a.dni}} </td>
+                <td> {{a.fecNac}} </td>
+                <td> {{a.sexo}} </td>
+                <td> {{a.provincia}} </td>
+                <td> {{a.localidad}} </td>
+                <td> {{a.domicilio}} </td>
+                <td> {{a.tel}} </td>
+                <td> {{a.tipoAlumno}} </td>
+                <td> {{a.tipoSeguro}} </td>
+                <td> {{a.observaciones}} </td>
+                <td> {{a.inscripciones}} </td>
+                <td> {{a.cuotasMensuales}} </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
